@@ -24,6 +24,10 @@ data Type n : Set where
 data Sub : ℕ → ℕ → Set where
   [_:=_] : (x : Fin (suc n)) (t : Type n) → Sub (suc n) n
 
+pattern 0V = varT 0F
+pattern 1V = varT 1F
+pattern 2V = varT 2F
+
 --
 -- Weakening
 --
